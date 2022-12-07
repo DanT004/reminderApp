@@ -1,17 +1,137 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Events
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Events in Calgary</ion-card-title>
+      <ion-card-subtitle>December</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-accordion-group>
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light">
+              <ion-label>Christmas Market</ion-label>
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains"
+                  src="https://static.nationalgeographic.co.uk/files/styles/image_3200/public/e94tn0.jpg?w=1600&h=1067" />
+              </ion-thumbnail>
+            </ion-item>
+            <div class="ion-padding" slot="content">
+              Date: Dec. 1 - Dec. 15 <br>
+              Where: Spruce Meadows
+              <ion-button expand="block" (click)="presentAlert()">Add to Reminders</ion-button>
+            </div>
+          </ion-accordion>
+
+          <ion-accordion value="second">
+            <ion-item slot="header" color="light">
+              <ion-label>Party @ the tower!</ion-label>
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains"
+                  src="https://thumbs.dreamstime.com/b/snow-falling-downtown-calgary-alberta-canada-snow-falling-downtown-calgary-alberta-canada-calgary-towner-background-104346772.jpg" />
+              </ion-thumbnail>
+            </ion-item>
+            <div class="ion-padding" slot="content">
+              Date: Dec. 18<br>
+              Where: Calgary Tower
+              <ion-button expand="block" (click)="presentAlert()">Add to Reminders</ion-button>
+            </div>
+          </ion-accordion>
+
+          <ion-accordion value="third">
+            <ion-item slot="header" color="light">
+              <ion-label>Sing Along</ion-label>
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains"
+                  src="https://i0.wp.com/media.globalnews.ca/videostatic/news/hscno84bfr-maponp3ked/CALGARY_NYE_CELEBRATION.jpg?w=1040&quality=70&strip=all" />
+              </ion-thumbnail>
+            </ion-item>
+            <div class="ion-padding" slot="content">
+              Date: Dec. 23<br>
+              Where: Calgary
+              <ion-button expand="block" (click)="presentAlert()">Add to Reminders</ion-button>
+            </div>
+          </ion-accordion>
+
+          <ion-accordion value="fourth">
+            <ion-item lines="none" slot="header" color="light">
+              <ion-label>Dinner Time!</ion-label>
+              <ion-thumbnail slot="start">
+                <img alt="Silhouette of mountains"
+                  src="https://www.hotelarts.ca/wp-content/uploads/2021/03/A93I9849-1-scaled.jpg" />
+              </ion-thumbnail>
+            </ion-item>
+            <div class="ion-padding" slot="content">
+              Date: Dec. 29<br>
+              Where: Chinook
+              <ion-button expand="block" (click)="presentAlert()">Add to Reminders</ion-button>
+            </div>
+          </ion-accordion>
+        </ion-accordion-group>
+      </ion-list>
+
+    </ion-card-content>
+
+    <ion-button fill="clear">
+      <ion-icon name="thumbs-down-outline"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear">
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-button>
+  </ion-card>
+
+
+
+
+  <ion-card>
+    <img alt="Silhouette of mountains"
+      src="http://images.dailyhive.com/20161228182517/15003444_10153905919082051_3892377217211018040_o-e1482978380871.jpg" />
+    <ion-label>#Concert</ion-label>
+    <ion-card-header>
+      <ion-card-title>Beatles</ion-card-title>
+      <ion-card-subtitle>Live at Calgary</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+
+    <ion-button fill="clear">
+      <ion-icon name="thumbs-down-outline"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear">
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-button>
+
+  </ion-card>
+
+  <ion-card>
+    <img alt="Silhouette of mountains"
+      src="https://www.vmcdn.ca/f/files/guelphtoday/images/stock-images/concert.jpg;w=960" />
+    <ion-label>#Movie</ion-label>
+    <ion-card-header>
+      <ion-card-title>Knives Out 2</ion-card-title>
+      <ion-card-subtitle>Now Showing!</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+
+    <ion-button fill="clear">
+      <ion-icon name="thumbs-down-outline"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear">
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-button>
+  </ion-card>
+
 </ion-content>
